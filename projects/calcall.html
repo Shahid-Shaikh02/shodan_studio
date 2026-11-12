@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CalcAll | Shodan Studio</title>
+  <link rel="icon" href="../images/favicon-32x32.png" type="image/png">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../theme.css" />
+  <style>
+    /* CalcAll page only: readable table and menu button on the light theme */
+    body.calcall-page .downloads-table-wrapper { background: #ffffff; border: 1px solid #d9d4c8; box-shadow: none; }
+    body.calcall-page .downloads-table thead,
+    body.calcall-page .downloads-table tbody tr:nth-child(odd),
+    body.calcall-page .downloads-table tbody tr:nth-child(even) { background: #ffffff; }
+    body.calcall-page .downloads-table tbody tr:nth-child(even) { background: #f3f0e9; }
+    body.calcall-page .downloads-table th { color: #4a5568; border-bottom: 1px solid #e3dfd6; }
+    body.calcall-page .downloads-table td { color: #2b2d31; border-bottom: 1px solid #e3dfd6; }
+    body.calcall-page .nav-toggle span { background: #2b2d31; }
+  </style>
+</head>
+<body class="calcall-page">
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="../index.html" class="logo">Shodan<span>Dev</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../extra.html">Extras</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a href="../projects.html" class="text-link">← Back to all projects</a>
+
+        <header class="section-header" style="margin-top:16px;">
+          <h2>CalcAll</h2>
+          <p>An all-in-one calculator for everyday math, dates, loans and health numbers.</p>
+        </header>
+
+        <div class="about-grid">
+          <div>
+            <p>
+              CalcAll is an all-in-one calculator by Shodan Studio, built with Flutter and published as a web app.
+              It covers basic arithmetic and scientific functions, age and date calculations, loan payments,
+              interest and BMI, and lets you save your own formulas for calculations you use often.
+            </p>
+            <ul class="meta-list">
+              <li><strong>Brand:</strong> Shodan Studio</li>
+              <li><strong>Stack:</strong> Flutter (web)</li>
+              <li><strong>Host:</strong> Cloudflare Pages</li>
+              <li><strong>Status:</strong> Live</li>
+            </ul>
+
+            <div class="card-actions" style="margin-top:10px;">
+              <a href="https://calcall.pages.dev/" target="_blank" rel="noopener" class="btn small">
+                Open live demo
+              </a>
+            </div>
+            <p class="downloads-note" style="margin-top:10px;">Source code is private.</p>
+          </div>
+
+          <div>
+            <div class="downloads-table-wrapper">
+              <table class="downloads-table">
+                <tbody>
+                  <tr>
+                    <th>Platform</th>
+                    <td>Website</td>
+                  </tr>
+                  <!-- <tr>
+                    <th>Input</th>
+                    <td>Mouse / keyboard</td>
+                  </tr> -->
+                  <tr>
+                    <th>Category</th>
+                    <td>Calculator / utility</td>
+                  </tr>
+                  <tr>
+                    <th>Tech used</th>
+                    <td>Flutter, Dart, Cloudflare Pages</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="downloads-note">
+              <img src="../images/calcall.png" alt="CalcAll calculator screenshot" style="width:100%; margin-top:10px; border-radius:8px;"/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Shodan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

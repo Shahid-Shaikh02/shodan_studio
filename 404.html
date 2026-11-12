@@ -4,16 +4,22 @@
   <title>Page Not Found</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="theme.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-container">
       <a class="logo" href="index.html">Shodan <span>Dev</span></a>
       <nav class="nav">
-        <ul class="nav-links">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
+          <li><a href="extra.html">Extras</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -53,9 +59,6 @@
     </div>
   </footer>
 
-  <script>
-    // set year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

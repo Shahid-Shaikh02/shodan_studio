@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
   <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
-  <title>Shodan Dev | Game & Web Developer</title>
+  <title>Shodan Dev | Web Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="theme.css" />
 </head>
 <body>
   <!-- Header / Nav -->
@@ -18,12 +20,9 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="navLinks">
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="https://shahid-shaikh02.github.io/shodan-games/" target="_blank">Games</a></li>
           <li><a href="extra.html">Extras</a></li>
-          <li><a href="#highlights">Highlights</a></li>
-          <li><a href="#downloads">Downloads</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -35,30 +34,105 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="eyebrow">Game Dev • Web Dev • Gamer</p>
-          <h1>Hi, I'm Shodan.</h1>
+          <p class="eyebrow">Web Dev</p>
+          <h1>Hi, I'm Shahid.</h1>
           <p class="hero-subtitle">
-            Building games in Unity, web experiences, and sharing dev projects with the community.
+            Building web experiences and sharing dev projects with the community.
           </p>
           <div class="hero-actions">
-            <a href="projects.html" class="btn primary">View Projects</a>
-            <a href="#downloads" class="btn ghost">Project Downloads</a>
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="contact.html" class="btn ghost">Contact</a>
           </div>
         </div>
         <div class="hero-card">
-          <div class="hero-tag">Now available for internships</div>
+          <div class="hero-tag">Now available for freelancing</div>
           <ul>
-            <li><span>Focus:</span> Gameplay, Basics, Advance</li>
-            <li><span>Stack:</span> C#, Unity, HTML, CSS</li>
+            <li><span>Stack:</span> C#, HTML, CSS</li>
             <li><span>Location:</span> India (IST)</li>
+            <li><span>Email:</span> shodansstudio@gmail.com</li>
           </ul>
           <div class="hero-socials">
-            <a href="https://youtube.com/@shodangp" target="_blank" rel="noreferrer">YouTube</a>
-            <a href="https://instagram.com/shodangp" target="_blank" rel="noreferrer">Instagram</a>
-            <a href="https://instagram.com/shodan_dev" target="_blank" rel="noreferrer">Instagram Dev</a>
             <a href="https://github.com/Shahid-Shaikh02" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://youtube.com/@shodan_dev" target="_blank" rel="noreferrer">YouTube</a>
+            <a href="https://instagram.com/shodan_dev" target="_blank" rel="noreferrer">Instagram</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <header class="section-header">
+          <h2>Projects</h2>
+          <p>Selected projects. Each one has a live link.</p>
+        </header>
+
+        <div class="grid-3">
+          <article class="card project-card">
+            <img class="card-shot" src="images/calcall.png" alt="CalcAll home screen with calculator, scientific, finance and health tools" loading="lazy" />
+            <div class="card-tag">Flutter &bull; Web app</div>
+            <h3>CalcAll</h3>
+            <p>All-in-one calculator: basic and scientific, age and dates, loan and interest, BMI, and saved custom formulas. Made under Shodan Studio.</p>
+            <ul class="meta-list">
+              <li>Built with Flutter</li>
+              <li>Hosted on Cloudflare Pages</li>
+            </ul>
+            <div class="card-actions">
+              <a href="https://calcall.pages.dev/" target="_blank" rel="noreferrer" class="btn small primary">Live Site</a>
+              <a href="projects/calcall.html" class="btn small ghost">Details</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <img class="card-shot" src="images/safeeraexim.png" alt="Safeera Exim e-commerce website" loading="lazy" />
+            <div class="card-tag">HTML 5 &bull; Web</div>
+            <h3>E-Commerce Website</h3>
+            <p>E-commerce website built with HTML, CSS and JavaScript, with product listings and a responsive layout.</p>
+            <ul class="meta-list">
+              <li>Stack: HTML, CSS, JS</li>
+              <li>Hosted on GitHub Pages</li>
+            </ul>
+            <div class="card-actions">
+              <a href="https://safeeraexim.com/" target="_blank" rel="noreferrer" class="btn small primary">Live site</a>
+              <a href="projects/safeeraexim.html" class="btn small ghost">Details</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <img class="card-shot" src="images/portfolio.png" alt="Shodan Portfolio website" loading="lazy" />
+            <div class="card-tag">HTML, JS &bull; Portfolio</div>
+            <h3>Shodan Portfolio</h3>
+            <p>Simple frontend static portfolio website built with HTML, CSS and JavaScript.</p>
+            <ul class="meta-list">
+              <li>Stack: HTML, CSS, JS</li>
+              <li>Hosted on Cloudflare Pages</li>
+              <li>Past project</li>
+            </ul>
+            <div class="card-actions">
+              <a href="index.html" target="_blank" rel="noreferrer" class="btn small primary">Live Site</a>
+              <a href="projects/portfolio.html" class="btn small ghost">Details</a>
+            </div>
+          </article>
+
+          <!-- <article class="card project-card">
+            <img class="card-shot" src="images/shodan-games.png" alt="Shodan Games website" loading="lazy" />
+            <div class="card-tag">HTML, JS &bull; Games</div>
+            <h3>Shodan Games</h3>
+            <p>Simple frontend static game website built with HTML, CSS and JavaScript.</p>
+            <ul class="meta-list">
+              <li>Stack: HTML, CSS, JS</li>
+              <li>Hosted on GitHub Pages</li>
+              <li>Past project</li>
+            </ul>
+            <div class="card-actions">
+              <a href="https://shahid-shaikh02.github.io/shodan-games/" target="_blank" rel="noreferrer" class="btn small primary">Play games</a>
+              <a href="projects/shodan-games.html" class="btn small ghost">Details</a>
+            </div>
+          </article> -->
+          
+        </div>
+        <p class="more-link"><a href="projects.html" class="text-link">See all projects &rarr;</a></p>
       </div>
     </section>
 
@@ -67,140 +141,28 @@
       <div class="container">
         <header class="section-header">
           <h2>About</h2>
-          <p class="logo">About <span>Shodan.</span></p>
         </header>
         <div class="about-grid">
           <p>
-            Young aspiring gamer and game developer from India, working with Unity, web
-            technologies, and 3D tools to build games, tools, and content for players and devs.
+            Young aspiring developer from India, working with C#, web technologies, and 3D tools to build tools and content.
           </p>
           <ul class="pill-list">
-            <li>Unity + C#</li>
+            <li>C#</li>
             <li>HTML, CSS</li>
-            <!-- <li>Responsive UI</li> -->
-            <li>Git & GitHub</li>
-            <li>Gaming</li>
+            <li>Git &amp; GitHub</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Highlight Projects -->
-    <section class="section section-alt" id="highlights">
-      <div class="container">
-        <header class="section-header">
-          <h2>Highlighted Projects</h2>
-          <p>Selected games and web projects with GitHub links.</p>
-        </header>
-
-        <div class="grid-3">
-          <!-- Project card 1 -->
-          <article class="card">
-            <div class="card-tag">HTML 5 • Web</div>
-            <h3>E-Commerce Website</h3>
-            <p>
-             E-Commerce and download hub deployed on GitHub Pages for static hosting.
-            </p>
-            <ul class="meta-list">
-              <li>Stack: HTML, CSS, JS</li>
-              <li>Host: GitHub Pages</li>
-            </ul>
-            <div class="card-actions">
-              <a href="projects/safeeraexim.html" target="_blank" class="btn small">
-                View Page
-              </a>
-              <a href="#downloads" class="text-link">Download build</a>
-            </div>
-          </article>
-
-          <!-- Project card 2 -->
-          <article class="card">
-            <div class="card-tag">Unity • Game</div>
-            <h3>Tic-Tac-Toe</h3>
-            <p>
-              Simple board game focusing on clean architecture and reusable UI patterns for future projects.
-            </p>
-            <ul class="meta-list">
-              <li>Engine: Unity</li>
-              <li>Language: C#</li>
-            </ul>
-            <div class="card-actions">
-              <a class="text-link">Under Development</a>
-            </div>
-            <!-- <div class="card-actions">
-              <a href="https://github.com/your-github-username/tic-tac-toe" target="_blank" class="btn small">
-                View on GitHub
-              </a>
-              <a href="#downloads" class="text-link">Download build</a>
-            </div> -->
-          </article>
-
-          <!-- Project card 3 -->
-          <article class="card">
-            <div class="card-tag">Frontend • Web</div>
-            <h3>Personal Portfolio</h3>
-            <p>
-              Responsive portfolio and download hub deployed on GitHub Pages for static hosting.
-            </p>
-            <ul class="meta-list">
-              <li>Stack: HTML, CSS, JS</li>
-              <li>Host: GitHub Pages</li>
-            </ul>
-            <div class="card-actions">
-              <a href="projects/portfolio.html" target="_blank" class="btn small">
-                View Page
-              </a>
-              <a href="#downloads" class="text-link">Download build</a>
-            </div>
-          </article>
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-strip">
+        <div>
+          <h2>Open to freelancing</h2>
+          <p>Email me with the role and project details.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Downloads -->
-    <section class="section" id="downloads">
-      <div class="container">
-        <header class="section-header">
-          <h2>Project Downloads</h2>
-          <p>Direct download links for builds and assets.</p>
-        </header>
-
-        <div class="downloads-table-wrapper">
-          <table class="downloads-table">
-            <thead>
-              <tr>
-                <th>Project</th>
-                <th>Platform</th>
-                <th>Size</th>
-                <th>Download</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- GitHub / LFS / external storage URLs -->
-              <tr>
-                <td>E-Commerce Website</td>
-                <td>WebGL</td>
-                <td>8.4 MB</td>
-                <td><a href="https://github.com/Shahid-Shaikh02/Safeera-Website/archive/refs/heads/main.zip" target="_blank">Download ZIP</a></td>
-              </tr>
-              <tr>
-                <td>Tic-Tac-Toe</td>
-                <td>Unknow</td>
-                <td>??</td>
-                <td><a href="https://github.com/Shahid-Shaikh02/" target="_blank">Download ZIP</a></td>
-              </tr>
-              <tr>
-                <td>Portfolio Web</td>
-                <td>WebGL</td>
-                <td>1 MB</td>
-                <td><a href="https://github.com/Shahid-Shaikh02/shodan_dev/archive/refs/heads/main.zip" target="_blank">Download ZIP</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="downloads-note">
-          <!-- Large files are hosted externally (GitHub Releases / object storage) to keep the site fast and responsive. -->
-        </p>
+        <a href="contact.html" class="btn primary">Get in touch</a>
       </div>
     </section>
   </main>
@@ -216,12 +178,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-

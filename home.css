@@ -1,0 +1,12 @@
+/* Homepage-only styles. style.css is unchanged so other pages are unaffected. */
+#projects .btn.small, .project-card .btn.small { color: var(--text); border-color: rgba(148,163,184,0.5); }
+.project-card .btn.small.primary { color: #020617; border-color: transparent; }
+.project-card .btn.small.ghost { background: transparent; color: var(--text); }
+.project-card { display: flex; flex-direction: column; }
+.project-card .card-actions { margin-top: auto; padding-top: 16px; display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; }
+.card-shot { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; border-radius: 10px; border: 1px solid rgba(148,163,184,0.2); margin-bottom: 14px; background: #0b1020; }
+.more-link { margin: 28px 0 0; }
+.contact-strip { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.contact-strip h2 { margin: 0 0 6px; font-size: 1.6rem; }
+.contact-strip p { margin: 0; color: var(--muted); }
+#about .about-grid p { color: var(--muted); line-height: 1.6; margin: 0; }

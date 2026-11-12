@@ -34,7 +34,7 @@ if (contactForm && formNote) {
 
     // Optional: show "sending..." state
     formNote.textContent = "Sending...";
-    formNote.style.color = "#555";
+    formNote.style.color = "#565f6b";
 
     try {
       const response = await fetch(contactForm.action || "https://formspree.io/f/mdkqdbyp", {
@@ -49,7 +49,7 @@ if (contactForm && formNote) {
         // ✅ Success
         formNote.textContent =
           "✅ Message sent successfully! We will contact you soon.";
-        formNote.style.color = "#22c55e";
+        formNote.style.color = "#166534";
         contactForm.reset();
       } else {
         // ❌ Formspree responded with an error
@@ -67,15 +67,14 @@ if (contactForm && formNote) {
           formNote.textContent =
             "There was a problem sending the message. Please try again later.";
         }
-        formNote.style.color = "#f97373";
+        formNote.style.color = "#b91c1c";
       }
     } catch (err) {
       // Network / CORS / other fetch-level error
       console.error("Network or CORS error:", err);
       formNote.textContent =
         "There was a problem sending the message. Please check your connection and try again.";
-      formNote.style.color = "#f97373";
+      formNote.style.color = "#b91c1c";
     }
   });
 }
-

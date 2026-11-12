@@ -1,0 +1,63 @@
+/* Site-wide light theme (draft): warm white, charcoal text, muted blue accent. Loaded after style.css; style.css is unchanged. To change palette, edit the :root block and the colours here. */
+/* ---- Light theme draft: warm white, charcoal text, muted blue accent ---- */
+:root {
+  --bg: #faf8f4; --bg-alt: #f1ede5; --card-bg: #ffffff;
+  --accent: #2f5d9e; --accent-soft: rgba(47,93,158,0.10);
+  --text: #1f2328; --muted: #565f6b; --border: #ddd6c8;
+  --shadow-soft: 0 10px 30px rgba(60,50,30,0.10);
+  --shadow-card: 0 6px 18px rgba(60,50,30,0.08);
+}
+body { background: #faf8f4; color: #1f2328; }
+.site-header { background: rgba(250,248,244,0.92); border-bottom: 1px solid #ddd6c8; }
+.nav-toggle span { background: #1f2328; }
+.nav-links a:hover { color: #1f2328; }
+.section-alt { background: #f1ede5; border-top: 1px solid #ddd6c8; border-bottom: 1px solid #ddd6c8; }
+.hero-card { background: #ffffff; border: 1px solid #ddd6c8; box-shadow: var(--shadow-soft); }
+.hero-tag { background: rgba(47,93,158,0.10); color: #2f5d9e; }
+.hero-socials a { background: #faf8f4; border: 1px solid #cfc7b6; color: #3a424c; }
+.hero-socials a:hover { background: rgba(47,93,158,0.10); border-color: #2f5d9e; color: #1f2328; }
+.btn.primary, .project-card .btn.small.primary { background: #2f5d9e; color: #ffffff; box-shadow: 0 6px 16px rgba(47,93,158,0.25); border-color: transparent; }
+.btn.primary:hover { background: #274f88; box-shadow: 0 8px 20px rgba(47,93,158,0.32); }
+.btn.ghost, .project-card .btn.small.ghost, .project-card .btn.small { background: transparent; color: #1f2328; border-color: #b9b0a0; }
+.project-card .btn.small.primary { color: #ffffff; }
+.btn.ghost:hover { background: #ffffff; border-color: #2f5d9e; }
+.pill-list li { background: #ffffff; border: 1px solid #cfc7b6; color: #1f2328; }
+.card { background: #ffffff; border: 1px solid #ddd6c8; box-shadow: var(--shadow-card); }
+.card:hover { background: #ffffff; border-color: #2f5d9e; box-shadow: 0 10px 24px rgba(60,50,30,0.14); }
+.card-tag { background: #f1ede5; border: 1px solid #cfc7b6; color: #3a424c; }
+.card-shot { border: 1px solid #ddd6c8; background: #eee9df; }
+.text-link, .more-link a { color: #2f5d9e; }
+.site-footer { background: #f1ede5; border-top: 1px solid #ddd6c8; color: #565f6b; }
+.eyebrow { color: #2f5d9e; }
+.logo, .logo span { color: #1f2328; }
+.logo span { color: #2f5d9e; }
+.hero-card li span, .section-header h2 { color: #1f2328; }
+@media (max-width: 720px) {
+  .nav-links { background: #ffffff; border: 1px solid #ddd6c8; box-shadow: var(--shadow-soft); }
+}
+#projects .project-card .btn.small.primary { color: #ffffff; background: #2f5d9e; border-color: transparent; }
+#projects .project-card .btn.small.ghost { color: #1f2328; border-color: #b9b0a0; }
+
+
+/* ---- Other pages: tables, form, project cards ---- */
+.card-cta { color: #2f5d9e; }
+.card:hover .card-cta { color: #274f88; }
+.downloads-table-wrapper { background: #ffffff; border: 1px solid #ddd6c8; }
+.downloads-table thead { background: #f1ede5; }
+.downloads-table th, .downloads-table td { border-bottom: 1px solid #ddd6c8; color: #1f2328; }
+.downloads-table tbody tr:nth-child(odd) { background: #ffffff; }
+.downloads-table tbody tr:nth-child(even) { background: #faf8f4; }
+.contact-form { background: #ffffff; border: 1px solid #ddd6c8; box-shadow: var(--shadow-card); }
+.field label { color: #1f2328; }
+.field input, .field textarea { background: #faf8f4; color: #1f2328; border: 1px solid #b9b0a0; }
+.field input::placeholder, .field textarea::placeholder { color: #6b7280; }
+.field input:focus, .field textarea:focus { border-color: #2f5d9e; outline: none; box-shadow: 0 0 0 2px rgba(47,93,158,0.25); }
+.btn.small.primary { background: #2f5d9e; color: #ffffff; border-color: transparent; }
+.btn.small, .btn.small.ghost { color: #1f2328; border-color: #b9b0a0; }
+.btn.small.primary:hover { background: #274f88; }
+.btn.small.ghost:hover { background: #ffffff; border-color: #2f5d9e; }
+.meta-list li { color: #565f6b; }
+.meta-list strong { color: #1f2328; }
+.nav-links a.active { color: #1f2328; font-weight: 600; }
+.contact-layout a { color: #2f5d9e; text-decoration: underline; }
+.contact-layout a:hover { color: #274f88; }
